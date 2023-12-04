@@ -1,5 +1,5 @@
 //const url = 'https://api-2670689.onrender.com/usuario'
-const url = 'http://localhost:8282/cliente'
+const url = 'https://backendapi-sjqg.onrender.com/cliente'
 
 const listarClientes = async () => {
     //Objeto del html donde se deslegará la información
