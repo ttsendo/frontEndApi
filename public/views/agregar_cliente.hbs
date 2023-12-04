@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vidakids |Home</title>
+    {{>header}}
+
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="/" class="site_title">
+                            <h1>Vida<span>kids</span></h1>
+                        </a>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <!-- menu profile quick info -->
+                    <div class="profile clearfix">
+                        <div class="profile_pic">
+                            <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Welcome,</span>
+                            <h2>{{nombre}}</h2>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+
+                    <br />
+
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <h3>General</h3>
+                            <ul class="nav side-menu">
+                                <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="/">Inicio</a></li>
+                                        {{!-- <li><a href="index2.html">Dashboard2</a></li>
+                                        <li><a href="index3.html">Dashboard3</a></li> --}}
+                                    </ul>
+                                </li>
+                                <li><a><i class="fa fa-edit"></i> Acudientes <span
+                                            class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        {{!-- <li><a href="form.html">General Form</a></li> --}}
+                                        <li><a href="lista_Acudiente">Lista de Acudiente</a></li>
+                                        <li><a href="registrar_Acudiente">Registrar Acudiente</a></li>
+                                        {{!-- <li><a href="form_wizards.html">Form Wizard</a></li>
+                                        <li><a href="form_upload.html">Form Upload</a></li>
+                                        <li><a href="form_buttons.html">Form Buttons</a></li> --}}
+                                    </ul>
+                                </li>
+                                <li><a><i class="fa fa-desktop"></i> Servicios <span
+                                            class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="">Categoria de servicios</a></li>
+                                        <li><a href="eventos">Eventos</a></li>
+                                        <li><a href="">Citas</a></li>
+                                        <li><a href="">Profesionales Voluntarios</a></li>
+                                    </ul>
+                                </li>
+                               
+                               <li><a><i class="fa fa-bar-chart-o"></i> Ventas <span
+                                            class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="lista_ventas">Gestion de Ventas</a></li>
+                                        <li><a href="lista_clientes">Gestion de Clientes</a></li>
+                                        <li><a href="#">Gestion de Productos</a></li>
+                                        <li><a href="#">Gestion de categoria de Productos</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- /sidebar menu -->
+                </div>
+            </div>
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <div class="nav toggle">
+                        <a id="menu_toggle"><i class="fa fa-bars" style="color:#f0cc2b;"></i></a>
+                    </div>
+                    <nav class="nav navbar-nav">
+                        <ul class=" navbar-right">
+                            <li class="nav-item dropdown open" style="padding-left: 15px;">
+                                <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true"
+                                    id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="images/img.jpg" alt="">{{nombre}}
+                                </a>
+                                <div class="dropdown-menu dropdown-usermenu pull-right"
+                                    aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="javascript:;"> Profile</a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <span class="badge bg-red pull-right">50%</span>
+                                        <span>Settings</span>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">Help</a>
+                                    <a class="dropdown-item" href="login"><i class="fa fa-sign-out pull-right"></i>
+                                        Cerrar sesión</a>
+                                </div>
+                            </li>
+
+                            <li role="presentation" class="nav-item dropdown open">
+                                <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-envelope-o " style="color: #f0cc2b;"></i>
+                                    <span class="badge bg-green">6</span>
+                                </a>
+                                <ul class="dropdown-menu list-unstyled msg_list" role="menu"
+                                    aria-labelledby="navbarDropdown1">
+                                    <li class="nav-item">
+                                        <a class="dropdown-item">
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were
+                                                where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item">
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were
+                                                where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item">
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were
+                                                where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dropdown-item">
+                                            <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                                            <span>
+                                                <span>John Smith</span>
+                                                <span class="time">3 mins ago</span>
+                                            </span>
+                                            <span class="message">
+                                                Film festivals used to be do-or-die moments for movie makers. They were
+                                                where...
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div class="text-center">
+                                            <a class="dropdown-item">
+                                                <strong>See All Alerts</strong>
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <!-- top tiles -->
+
+                <!-- /top tiles -->
+
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 ">
+                        <form action="" class="formulario" id="formulario">
+                            <h2>Agregar Cliente</h2>
+
+                            <div class="columnas">
+                                <div class="columna">
+                                    <input type="text" id="id" style="display: none;">
+                                    <div class="formulario__grupo" id="grupo__nombre">
+                                        <label for="nombre" class="formulario__label">Nombre</label>
+                                        <div class="formulario__grupo-input">
+                                            <input type="text" class="formulario__input" name="nombre" id="nombre"
+                                                placeholder="">
+                                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                        </div>
+                                        <p class="formulario__input-error">El campo no puede contener numeros</p>
+                                    </div>
+
+
+                                    <!-- Grupo: edad -->
+                                    <div class="formulario__grupo" id="grupo__apellido">
+                                        <label for="apellido" class="formulario__label">Apellido</label>
+                                        <div class="formulario__grupo-input">
+                                            <input type="text" class="formulario__input" name="apellido" id="apellido"
+                                                placeholder="">
+                                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                        </div>
+                                        <p class="formulario__input-error">El campo no puede contener letras ni estar
+                                            vacio.</p>
+                                    </div>
+
+
+                                    <!-- Grupo: placa_vehiculo_p -->
+                                    <div class="formulario__grupo" id="grupo__correo">
+                                        <label for="correo" class="formulario__label">Correo electronico
+                                            personal</label>
+                                        <div class="formulario__grupo-input">
+                                            <input type="text" class="formulario__input" name="correo"
+                                                id="email" placeholder="">
+                                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                        </div>
+                                        <p class="formulario__input-error">El campo targeta de identidad no puede
+                                            contener
+                                            letras.
+                                        </p>
+                                    </div>
+
+
+                                    <!-- Grupo: telefono -->
+                                    <div class="formulario__grupo" id="grupo__telefono">
+                                        <label for="telefono" class="formulario__label">Telefono</label>
+                                        <div class="formulario__grupo-input">
+                                            <input type="text" class="formulario__input" name="telefono"
+                                                id="telefono" placeholder="">
+                                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                        </div>
+                                        <p class="formulario__input-error">El campo no puede contener letras ni estar
+                                            vacio.</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="columna">
+                                   <!-- Grupo: pass -->
+                                    <div class="formulario__grupo" id="grupo__pass">
+                                        <label for="pass" class="formulario__label">Contraseña</label>
+                                        <div class="formulario__grupo-input">
+                                            <input type="text" class="formulario__input" name="pass"
+                                                id="password" placeholder="">
+                                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                        </div>
+                                        <p class="formulario__input-error">El campo no puede contener letras ni estar
+                                            vacio.</p>
+                                    </div>
+
+                                    <!-- Grupo: pass2 -->
+                                    <div class="formulario__grupo" id="grupo__pass2">
+                                        <label for="pass" class="formulario__label">Confirmar contraseña</label>
+                                        <div class="formulario__grupo-input">
+                                            <input type="text" class="formulario__input" name="pass2"
+                                                id="confirmarPassword" placeholder="">
+                                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                        </div>
+                                        <p class="formulario__input-error">El campo no puede contener letras ni estar
+                                            vacio.</p>
+                                    </div>
+
+                                    <!-- Grupo: asistencia -->
+                                    <div class="formulario__grupo" id="grupo__pais">
+                                        <label for="pais" class="formulario__label">Pais</label>
+                                        <div class="formulario__grupo-input">
+                                            <select id="pais" name="pais">
+                                                <option value="seleccionar">seleccionar</option>
+                                                <option value="colombia">Colombia</option>
+                                                <option value="ecuador">Ecuador</option>
+                                                <option value="argentina">Argentina</option>
+                                                <option value="chile">Chile</option>
+                                                <option value="brasil">Brasil</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="formulario__grupo" id="grupo__departamento">
+                                        <label for="departamento" class="formulario__label">Departamento</label>
+                                        <div class="formulario__grupo-input">
+                                            <select id="departamento" name="departamento" disabled>
+                                                <option value="seleccionar">seleccionar</option>
+                                               
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="formulario__mensaje" id="formulario__mensaje">
+                                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el
+                                    formulario
+                                    correctamente. </p>
+                            </div>
+
+
+                            <div class="botones">
+                                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                                    <button type="submit" class="formulario__btn" id="btnRegistrar">Agregar nuevo cliente</button>
+                                    <p class="formulario__mensaje-exito" >Formulario
+                                        enviado
+                                        exitosamente!</p>
+                                </div>
+
+                                <div class="formulario__grupo formulario__grupo-btn-cancelar">
+                                    <button type="submit" class="formulario__btn-cancelar"
+                                        id="boton_volver">Cancelar</button>
+                                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario
+                                        enviado
+                                        exitosamente!</p>
+                                </div>
+                            </div>
+                        </form>
+
+
+                        <div class="clearfix"></div>
+
+                    </div>
+
+                </div>
+                <br />
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <script src="funciones.js"></script>
+     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    {{>footer_validacion_clientes}}
+
+
+
+</body>
+
+</html>

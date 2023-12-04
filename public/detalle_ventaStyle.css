@@ -1,0 +1,31 @@
+.detalle-venta, .detalle-cliente {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.detalle-venta h1 {
+    margin-top: 0;
+}
+
+.detalle-venta label {
+    display: inline-block;
+    width: 150px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.detalle-venta #productos {
+    list-style-type: none;
+    padding: 0;
+}
+
+.detalle-venta #productos li {
+    margin-bottom: 5px;
+}
+
+
+
+
