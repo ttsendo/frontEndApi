@@ -1,5 +1,5 @@
 //const url = 'https://api-2670689.onrender.com/usuario'
-const url = 'http://localhost:8282/cliente'
+const url = 'https://backendapi-sjqg.onrender.com/cliente'
 
 const listarClientes = async () => {
     //Objeto del html donde se deslegará la información
@@ -29,10 +29,16 @@ const listarClientes = async () => {
                     `<td>` + cliente.email + `</td>` +
                     `<td>` + cliente.telefono + `</td>` +
                     `<td>` + cliente.password + `</td>` +
-                    `<td><button onclick="redireccionarEditar('${objetoCliente}')">Editar</button></td>` +
-                    `<td><button onclick="deleteCliente('${cliente.id}')">Eliminar</button></td>` +
+                    `<td>   <div>
+                                <a href="detalle_clientes"><img src="../images/eye-svgrepo-com.svg" alt="icon"
+                                    class="opc_eyes"></a>
+                            </div> </td>`+
+                    `<td><button style="border: none; background: none; " onclick="redireccionarEditar('${objetoCliente}')"><img src="../images/editar.png" alt="icon" class="opc_edit"></button></td>` +
+                    `<td><button style="border: none; background: none;" onclick="deleteCliente('${cliente.id}')"><img src="../images/borrar.png" alt="icon"
+                        class="opc_delete" onclick="mostrarAlerta()"></button></td>` +
                     `</tr>`
             })
+
             objectId.innerHTML = contenido
         })
 
