@@ -104,7 +104,6 @@ const registrarCliente = () => {
     //     alert('Las contraseñas no coinciden')
     // }
     else {
-        alert('Registrando')
         let cliente = {
             id: id,
             nombre: nombre,
