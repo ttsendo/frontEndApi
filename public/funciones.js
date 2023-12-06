@@ -250,7 +250,7 @@ function generateUUID() { // Public Domain/MIT
 function deleteCliente(id) {
     console.log(id);
 
-    fetch('http://localhost:8282/cliente?id=' + id, {
+    fetch('https://backendapi-sjqg.onrender.com/cliente?id=' + id, {
         method: 'DELETE',
         mode: 'cors',
         // body: JSON.stringify(id),//Convertir el objeto a JSON
